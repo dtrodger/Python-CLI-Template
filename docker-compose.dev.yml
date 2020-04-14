@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+
+networks:
+  box-dev:
+    driver: "bridge"
