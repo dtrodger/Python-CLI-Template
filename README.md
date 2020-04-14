@@ -1,6 +1,4 @@
-## Box Folder Chunker  
-This app seeds a Box folder structure based on start date, end date, root seed folder and chunking strategy (day, hour, minute, second). After running the app, the target Box folder will have a structure like below  
-![folder structure](/data/docs/Folder_Structure.png)  
+## Python CLI Template
 ### Runtime Requirements  
 [Python 3.6+](https://www.python.org/downloads/)  
 [PIP package manager](https://pip.pypa.io/en/stable/installing/)  
@@ -16,13 +14,8 @@ This app seeds a Box folder structure based on start date, end date, root seed f
 `data/configuration/no_key_example.yml`  
 to  
 `data/configuration/dev.yml`  
-5. Update the `data/configuration/dev.yml` file with Box Platform application JWT keys and set the seed related attibutes to configure the chunking strategy  
-![Ccnfig](/data/docs/config.png)  
+5. Update the `data/configuration/dev.yml` file with Box Platform application JWT keys and set the seed related attibutes  
 6. Run the command line interface menu to see the available commands  
 `$ python src/cli/main.py` 
-7. Run the seed-folders command to build a datetime chunked Box environment  
- `$ python src/cli/main.py seed-folders`  
-8. Build the dev Docker image  
-`$ make dev`  
-9. Build the prod Docker image  
-`$ make prod`  
+7. Run the foo command to build a datetime chunked Box environment  
+ `$ python src/cli/main.py foo`  
